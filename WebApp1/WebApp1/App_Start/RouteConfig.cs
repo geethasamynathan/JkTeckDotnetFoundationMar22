@@ -12,6 +12,11 @@ namespace WebApp1
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            routes.MapRoute(
+               name: "Employee",
+               url: " Employee/{id}",
+               defaults: new { controller = "Employee", action = "Index" }
+           );
 
             routes.MapRoute(
                 name: "Default",

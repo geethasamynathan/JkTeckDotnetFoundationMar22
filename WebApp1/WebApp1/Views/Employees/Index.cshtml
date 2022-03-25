@@ -1,63 +1,112 @@
-﻿@model  IEnumerable<WebApp1.Models.Employee>
+﻿@model  WebApp1.ViewModels.EmployeeViewModel
+
 @{
     ViewBag.Title = "Index";
-
     // var employee = ViewData["emp"] as WebApp1.Models.Employee;
     //  var employee1 = ViewBag.emp1;
+    var emplist = Model.Employee.ToList();
+    var addlist = Model.Address.ToList();
 }
-
 <table border="1">
     <tr>
-        <th>Id</th>
+        <th>Empid</th>
         <th>Name</th>
         <th>Gender</th>
         <th>Salary</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Country</th>
+        <th>ZipCode</th>
     </tr>
-
-    @foreach (var emp in Model)
+    @foreach (var i in emplist)
     {
-        <tr>
-            <td>@emp.Empid</td>
-            <td>@emp.Name</td>
-            <td>@emp.Gender</td>
-            <td>@emp.Salary</td>
-        </tr>
+<tr>
+    <td>@i.Empid</td>
+    <td> @i.Name</td>
+    <td> @i.Gender</td>
+    <td> @i.Salary</td>
+    @foreach (var a in addlist)
+    {
+        if (i.AddressId == a.AddressId)
+        {
+            <td>@a.City</td>
+            <td> @a.State</td>
+            <td> @a.Country</td>
+            <td> @a.ZipCode</td>
 
+        }
     }
-</table>
-@*<h2> Strongly typed view</h2>
-<ul>
-    <li>@Model.Empid</li>
-    <li>@Model.Name</li>
-    <li>@Model.Gender</li>
-    <li>@Model.Salary</li>
-</ul>*@
-@*<h2>Employee Index</h2>
-<ul>
-    <li>@employee.Empid</li>
-    <li>@employee.Name</li>
-    <li>@employee.Gender</li>
-    <li>@employee.Salary</li>
-</ul>
+</tr>
+    }
+    </table>
+    <h2> employee count : @emplist.Count</h2>
+    @*
+        <h2> @Model.PageTitle</h2>
+        <ul>
+            <li>@Model.Employee.Empid</li>
+            <li>@Model.Employee.Name</li>
+            <li>@Model.Employee.Gender</li>
+            <li>@Model.Employee.Salary</li>
+            <li>@Model.Address.City</li>
+            <li>@Model.Address.State</li>
+            <li>@Model.Address.Country</li>
+            <li>@Model.Address.ZipCode</li>
+        </ul>
+    *@
+    @*
+        <table border="1">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Salary</th>
+            </tr>
 
-<h2>Employee details using ViewBag</h2>
-<ul>
-    <li>@employee1.Empid</li>
-    <li>@employee1.Name</li>
-    <li>@employee1.Gender</li>
-    <li>@employee1.Salary</li>
-</ul>*@
-@*<h3> Employee details using ViewData</h3>
-    <ul>
-        <li>@ViewData["empid"]</li>
-        <li>@ViewData["empname"]</li>
-        <li>@ViewData["gender"]</li>
+            @foreach (var emp in Model)
+            {
+                <tr>
+                    <td>@emp.Empid</td>
+                    <td>@emp.Name</td>
+                    <td>@emp.Gender</td>
+                    <td>@emp.Salary</td>
+                </tr>
 
-    </ul>
-    <h3> Employee details using ViewBag</h3>
-    <ul>
-        <li>@ViewBag.eid</li>
-        <li>@ViewBag.ename</li>
-        <li>@ViewBag.gendr</li>
+            }
+        </table>
+    *@
+    @*<h2> Strongly typed view</h2>
+        <ul>
+            <li>@Model.Empid</li>
+            <li>@Model.Name</li>
+            <li>@Model.Gender</li>
+            <li>@Model.Salary</li>
+        </ul>*@
+    @*<h2>Employee Index</h2>
+        <ul>
+            <li>@employee.Empid</li>
+            <li>@employee.Name</li>
+            <li>@employee.Gender</li>
+            <li>@employee.Salary</li>
+        </ul>
 
-    </ul>*@   
+        <h2>Employee details using ViewBag</h2>
+        <ul>
+            <li>@employee1.Empid</li>
+            <li>@employee1.Name</li>
+            <li>@employee1.Gender</li>
+            <li>@employee1.Salary</li>
+        </ul>*@
+    @*<h3> Employee details using ViewData</h3>
+        <ul>
+            <li>@ViewData["empid"]</li>
+            <li>@ViewData["empname"]</li>
+            <li>@ViewData["gender"]</li>
+
+        </ul>
+        <h3> Employee details using ViewBag</h3>
+        <ul>
+            <li>@ViewBag.eid</li>
+            <li>@ViewBag.ename</li>
+            <li>@ViewBag.gendr</li>
+
+        </ul>*@
