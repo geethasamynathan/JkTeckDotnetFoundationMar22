@@ -13,4 +13,8 @@ namespace WebApp1.Models
         public int Salary { get; set; }
         public int AddressId { get; set; }
     }
+    public enum Gender
+    {
+        Male, Female
+    }
 }

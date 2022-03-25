@@ -43,7 +43,7 @@ namespace WebApp1.Controllers
 
              };
             List<Address> addresses = new List<Address>()
-            { new Address() {AddressId=1,City="Bgl",State="KA",Country="India",ZipCode=34354},
+            { new Address() {AddressId=1,City="Bgl",State="KA",Country="India",ZipCode=34354,},
             new Address() {AddressId=2,City="chennai",State="TN",Country="India",ZipCode=34354},
             new Address() {AddressId=3,City="hyderabad",State="TS",Country="India",ZipCode=34354},
             new Address() {AddressId=4,City="Bgl",State="KA",Country="India",ZipCode=34354},
@@ -68,6 +68,11 @@ namespace WebApp1.Controllers
 
 
          //   return View(employee);
+        }
+        [HttpGet]
+        public ActionResult Create()
+        {
+            return View();
         }
     }
 }

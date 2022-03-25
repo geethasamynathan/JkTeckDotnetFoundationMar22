@@ -8,36 +8,40 @@
     var addlist = Model.Address.ToList();
 }
 <table border="1">
-    <tr>
-        <th>Empid</th>
-        <th>Name</th>
-        <th>Gender</th>
-        <th>Salary</th>
-        <th>City</th>
-        <th>State</th>
-        <th>Country</th>
-        <th>ZipCode</th>
-    </tr>
-    @foreach (var i in emplist)
-    {
-<tr>
-    <td>@i.Empid</td>
-    <td> @i.Name</td>
-    <td> @i.Gender</td>
-    <td> @i.Salary</td>
-    @foreach (var a in addlist)
-    {
-        if (i.AddressId == a.AddressId)
+    <thead>
+        <tr>
+            <th>Empid</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Salary</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Country</th>
+            <th>ZipCode</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var i in emplist)
         {
-            <td>@a.City</td>
-            <td> @a.State</td>
-            <td> @a.Country</td>
-            <td> @a.ZipCode</td>
+            <tr>
+                <td>@i.Empid</td>
+                <td> @i.Name</td>
+                <td> @i.Gender</td>
+                <td> @i.Salary</td>
+                @foreach (var a in addlist)
+                {
+                    if (i.AddressId == a.AddressId)
+                    {
+                        <td>@a.City</td>
+                        <td> @a.State</td>
+                        <td> @a.Country</td>
+                        <td> @a.ZipCode</td>
 
+                    }
+                }
+            </tr>
         }
-    }
-</tr>
-    }
+    </tbody>
     </table>
     <h2> employee count : @emplist.Count</h2>
     @*

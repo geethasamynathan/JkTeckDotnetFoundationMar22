@@ -1,0 +1,35 @@
+﻿@using WebApp1.Models;
+@model Employee
+    ViewBag.Title = "Create";
+}
+
+<h2>Create New Employee</h2>
+ Male @Html.RadioButton("Gender", "Male");
+    Female @Html.RadioButton("Gender", "Female");
+ 
+        <br />
+        <br /
+            @Html.Label("Employee_Id", "Empid", new { Style = "Color:Green;" })
+            @Html.TextBox("Employee_Id", "101", new { Style = "background-color:blue;color:white;" })
+        <br />
+        <br />
+        @Html.Label("Name", "Name", new { Style = "Color:Green;" })
+        @Html.TextBox("Name", "", new { Style = "background-color:blue;color:white;" })
+        <br />
+        <br />
+        @*@Html.Label("Gender", "Gender", new { Style = "Color:Green;" })
+        Male @Html.RadioButton("Gender", "Male");
+        Female @Html.RadioButton("Gender", "Female");*@
+        <br />
+        <br />
+        @Html.LabelFor(m => m.Salary,""})
+        @Html.TextBox("salary", "", new { Style = "background-color:blue;color:white;" })
+        <br />
+        <br />
+@Html.DropDownListFor(m => m.Gender,new SelectList(Enum.GetValues(typeof(Gender))),"Choose Gender")
+@Html.TextBoxFor
+  
+
+    <form>
+        <label></label>
+    </form>
