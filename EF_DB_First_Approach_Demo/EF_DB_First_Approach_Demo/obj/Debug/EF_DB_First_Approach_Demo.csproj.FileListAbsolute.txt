@@ -76,7 +76,7 @@ H:\JKTech Dotnet foundation Mar 22\MVC Demos\JkTeckDotnetFoundationMar22\EF_DB_F
 H:\JKTech Dotnet foundation Mar 22\MVC Demos\JkTeckDotnetFoundationMar22\EF_DB_First_Approach_Demo\EF_DB_First_Approach_Demo\bin\Newtonsoft.Json.xml
 H:\JKTech Dotnet foundation Mar 22\MVC Demos\JkTeckDotnetFoundationMar22\EF_DB_First_Approach_Demo\EF_DB_First_Approach_Demo\bin\Antlr3.Runtime.pdb
 H:\JKTech Dotnet foundation Mar 22\MVC Demos\JkTeckDotnetFoundationMar22\EF_DB_First_Approach_Demo\EF_DB_First_Approach_Demo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-H:\JKTech Dotnet foundation Mar 22\MVC Demos\JkTeckDotnetFoundationMar22\EF_DB_First_Approach_Demo\EF_DB_First_Approach_Demo\obj\Debug\EF_DB_First_Approach_Demo.csproj.AssemblyReference.cache
 H:\JKTech Dotnet foundation Mar 22\MVC Demos\JkTeckDotnetFoundationMar22\EF_DB_First_Approach_Demo\EF_DB_First_Approach_Demo\obj\Debug\EF_DB_First_Approach_Demo.csproj.CoreCompileInputs.cache
 H:\JKTech Dotnet foundation Mar 22\MVC Demos\JkTeckDotnetFoundationMar22\EF_DB_First_Approach_Demo\EF_DB_First_Approach_Demo\obj\Debug\EF_DB_First_Approach_Demo.dll
 H:\JKTech Dotnet foundation Mar 22\MVC Demos\JkTeckDotnetFoundationMar22\EF_DB_First_Approach_Demo\EF_DB_First_Approach_Demo\obj\Debug\EF_DB_First_Approach_Demo.pdb
+H:\JKTech Dotnet foundation Mar 22\MVC Demos\JkTeckDotnetFoundationMar22\EF_DB_First_Approach_Demo\EF_DB_First_Approach_Demo\obj\Debug\EF_DB_First_Approach_Demo.csproj.AssemblyReference.cache
