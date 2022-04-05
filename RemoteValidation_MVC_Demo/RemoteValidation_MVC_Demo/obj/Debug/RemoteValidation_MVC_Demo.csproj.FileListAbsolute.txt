@@ -78,6 +78,5 @@ H:\JKTech Dotnet foundation Mar 22\MVC Demos\JkTeckDotnetFoundationMar22\RemoteV
 H:\JKTech Dotnet foundation Mar 22\MVC Demos\JkTeckDotnetFoundationMar22\RemoteValidation_MVC_Demo\RemoteValidation_MVC_Demo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 H:\JKTech Dotnet foundation Mar 22\MVC Demos\JkTeckDotnetFoundationMar22\RemoteValidation_MVC_Demo\RemoteValidation_MVC_Demo\obj\Debug\RemoteValidation_MVC_Demo.csproj.AssemblyReference.cache
 H:\JKTech Dotnet foundation Mar 22\MVC Demos\JkTeckDotnetFoundationMar22\RemoteValidation_MVC_Demo\RemoteValidation_MVC_Demo\obj\Debug\RemoteValidation_MVC_Demo.csproj.CoreCompileInputs.cache
-H:\JKTech Dotnet foundation Mar 22\MVC Demos\JkTeckDotnetFoundationMar22\RemoteValidation_MVC_Demo\RemoteValidation_MVC_Demo\obj\Debug\RemoteValidation_MVC_Demo.csproj.CopyComplete
 H:\JKTech Dotnet foundation Mar 22\MVC Demos\JkTeckDotnetFoundationMar22\RemoteValidation_MVC_Demo\RemoteValidation_MVC_Demo\obj\Debug\RemoteValidation_MVC_Demo.dll
 H:\JKTech Dotnet foundation Mar 22\MVC Demos\JkTeckDotnetFoundationMar22\RemoteValidation_MVC_Demo\RemoteValidation_MVC_Demo\obj\Debug\RemoteValidation_MVC_Demo.pdb

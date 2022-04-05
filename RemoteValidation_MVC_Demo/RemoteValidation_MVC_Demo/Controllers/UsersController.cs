@@ -53,6 +53,10 @@ namespace RemoteValidation_MVC_Demo.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "UserID,FullName,Username,Password")] User user)
         {
+            if (db.Users.Any(x => x.Username == user.Username))
+            {
+                ModelState.AddModelError("UserName", "UserName already in use");
+            }
             if (ModelState.IsValid)
             {
                 db.Users.Add(user);

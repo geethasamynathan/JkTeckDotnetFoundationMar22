@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.ComponentModel.DataAnnotations;
-
+using RemoteValidation_MVC_Demo.Common;
 namespace RemoteValidation_MVC_Demo.Models
 {
     [MetadataType(typeof(UserMetaData))]
@@ -13,7 +13,7 @@ namespace RemoteValidation_MVC_Demo.Models
     }
         public class UserMetaData
     {
-        [Remote("IsUserNameAvailable","Users",HttpMethod ="POST",ErrorMessage ="UserName already in use.")]
+        [RemoteClientServer("IsUserNameAvailable","Users",HttpMethod ="POST",ErrorMessage ="UserName already in use.")]
         public string Username { get; set; }
     }
 }
