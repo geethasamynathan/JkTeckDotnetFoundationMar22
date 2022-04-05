@@ -3,19 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using ExceptionFilterDemo.Models;
 
 namespace ExceptionFilterDemo.Controllers
 {
     
-    [HandleError(ExceptionType =typeof(NullReferenceException),View ="NullReference")]
-    [HandleError(ExceptionType = typeof(DivideByZeroException), View = "divideByZero")]
+    //[HandleError(ExceptionType =typeof(NullReferenceException),View ="NullReference")]
+    //[HandleError(ExceptionType = typeof(DivideByZeroException), View = "divideByZero")]
+  // [LogCustomExceptionFilter]
     public class HomeController : Controller
     {
    
         public ActionResult Index()
         {
-            throw new Exception("Something went wrong");
-            //return View();
+          // throw new Exception("Something went wrong");
+            return View();
         }
 
         public ActionResult TestMethod1()
