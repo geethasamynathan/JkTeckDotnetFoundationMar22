@@ -162,6 +162,7 @@
     <Compile Include="Models\UserRolesMapping.cs">
       <DependentUpon>UserRoleModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\UsersRoleProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

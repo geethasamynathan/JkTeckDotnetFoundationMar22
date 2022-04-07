@@ -10,17 +10,19 @@ using SecurityDemo.Models;
 
 namespace SecurityDemo.Controllers
 {
-    [Authorize]
+   // [Authorize]
     public class EmployeesController : Controller
     {
         private MVC_DBEntities db = new MVC_DBEntities();
 
         // GET: Employees
+        [Authorize(Roles ="Admin,User,Customer")]
         public ActionResult Index()
         {
             return View(db.Employees.ToList());
         }
 
+        [Authorize(Roles ="Admin,Customer")]
         // GET: Employees/Details/5
         public ActionResult Details(int? id)
         {
@@ -36,6 +38,7 @@ namespace SecurityDemo.Controllers
             return View(employee);
         }
 
+        [Authorize(Roles ="Admin,User")]
         // GET: Employees/Create
         public ActionResult Create()
         {
@@ -58,7 +61,7 @@ namespace SecurityDemo.Controllers
 
             return View(employee);
         }
-
+        [Authorize(Roles ="User")]
         // GET: Employees/Edit/5
         public ActionResult Edit(int? id)
         {
@@ -90,6 +93,7 @@ namespace SecurityDemo.Controllers
             return View(employee);
         }
 
+        [Authorize(Roles ="Admin")]
         // GET: Employees/Delete/5
         public ActionResult Delete(int? id)
         {

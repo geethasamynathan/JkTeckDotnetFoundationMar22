@@ -23,8 +23,10 @@
                     @if (User.Identity.IsAuthenticated)
                     {
                 <li>@Html.ActionLink("Get Employee List", "Index", "Employees")</li>
-
+                        if (User.IsInRole("Admin") || User.IsInRole("USer"))
+                        {
                     <li>@Html.ActionLink("Add Employee", "create", "Employees")</li>
+                        }
                     <li><a>Hello -@User.Identity.Name</a></li>
                     <li>@Html.ActionLink("Logout", "Logout", "Accounts")</li>
                     }
