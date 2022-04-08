@@ -86,3 +86,5 @@ H:\JKTech Dotnet foundation Mar 22\MVC Demos\JkTeckDotnetFoundationMar22\Employe
 H:\JKTech Dotnet foundation Mar 22\MVC Demos\JkTeckDotnetFoundationMar22\EmployeeService\EmployeeService\obj\Debug\EmployeeService.csproj.CoreCompileInputs.cache
 H:\JKTech Dotnet foundation Mar 22\MVC Demos\JkTeckDotnetFoundationMar22\EmployeeService\EmployeeService\obj\Debug\EmployeeService.dll
 H:\JKTech Dotnet foundation Mar 22\MVC Demos\JkTeckDotnetFoundationMar22\EmployeeService\EmployeeService\obj\Debug\EmployeeService.pdb
+H:\JKTech Dotnet foundation Mar 22\MVC Demos\JkTeckDotnetFoundationMar22\EmployeeService\EmployeeService\bin\Swashbuckle.Core.dll
+H:\JKTech Dotnet foundation Mar 22\MVC Demos\JkTeckDotnetFoundationMar22\EmployeeService\EmployeeService\bin\WebActivatorEx.dll
