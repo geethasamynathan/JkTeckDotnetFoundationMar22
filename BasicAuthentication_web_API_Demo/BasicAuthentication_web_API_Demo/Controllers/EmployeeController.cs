@@ -13,7 +13,7 @@ namespace BasicAuthentication_web_API_Demo.Controllers
     public class EmployeeController : ApiController
     {
         
-        [BasicAuthenticationAttribue]
+        [Authorize]
         public HttpResponseMessage GetEmployees()
         {
             string username = Thread.CurrentPrincipal.Identity.Name;
