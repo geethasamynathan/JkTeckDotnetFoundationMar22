@@ -10,12 +10,12 @@ namespace Routing_WebAPI_Demo.Controllers
     [RoutePrefix("students")]
     public class StudentsController : ApiController
     {
-        static List<Student> students = new List<Student>() 
-        { 
+        static List<Student> students = new List<Student>()
+    {
            new Student(){Id=1,Name="Ranjitha"},
             new Student(){Id=2,Name="Shilpa"},
              new Student(){Id=3,Name="Pavani"},
-             new Student(){Id=4,Name="Shylaja"},
+            new Student(){Id=4,Name="Shylaja"},
              new Student(){Id=5,Name="Raziq"}
         };
 
